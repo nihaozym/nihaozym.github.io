@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nihaozym.github.io/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-26T23:15:26+08:00</lastmod>
+  </url><url>
+    <loc>https://nihaozym.github.io/p/newfile/</loc>
+    <lastmod>2025-02-26T23:15:26+08:00</lastmod>
+  </url><url>
+    <loc>https://nihaozym.github.io/post/</loc>
+    <lastmod>2025-02-26T23:15:26+08:00</lastmod>
   </url><url>
     <loc>https://nihaozym.github.io/page/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
@@ -24,9 +30,6 @@
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nihaozym.github.io/p/markdown-syntax-guide/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nihaozym.github.io/post/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nihaozym.github.io/categories/syntax/</loc>
