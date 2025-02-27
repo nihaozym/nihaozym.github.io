@@ -7,13 +7,79 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>梦想家的懒虫-shon</copyright>
-        <lastBuildDate>Wed, 26 Feb 2025 23:15:26 +0800</lastBuildDate><atom:link href="https://nihaozym.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Newfile</title>
-        <link>https://nihaozym.github.io/p/newfile/</link>
-        <pubDate>Wed, 26 Feb 2025 23:15:26 +0800</pubDate>
+        <lastBuildDate>Thu, 27 Feb 2025 11:49:58 +0800</lastBuildDate><atom:link href="https://nihaozym.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hugo</title>
+        <link>https://nihaozym.github.io/p/hugo/</link>
+        <pubDate>Thu, 27 Feb 2025 11:49:58 +0800</pubDate>
         
-        <guid>https://nihaozym.github.io/p/newfile/</guid>
-        <description>&lt;p&gt;haha nihao&lt;/p&gt;
+        <guid>https://nihaozym.github.io/p/hugo/</guid>
+        <description>&lt;p&gt;1.安装 git
+windows 安装 git 还是简单的，https://git-scm.com/downloads/win  进入到该网站之后选择适用于自己电脑的版本
+当然直接使用 winget 命令是最简单的
+winget install &amp;ndash;id Git.Git -e &amp;ndash;source winget
+这个时候我们已经安装好了，你可以使用 version 查看版本
+git version
+2. 安装 hugo
+方法一：这里我参考了Windows安装hugo既可以使用 windows 电脑自带的 winget 包管理器安装 Hugo 的扩展版本
+winget install Hugo.Hugo.Extended
+卸载 Hugo 的扩展版本：
+#查看版本
+hugo version
+#使用winget进行删除
+winget uninstall &amp;ndash;name &amp;ldquo;Hugo (Extended)&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;#如果无法卸载,可以找到安装的exe文件，进行删除
+where.exe hugo
+方法二：
+从 github 上面https://github.com/gohugoio/hugo/tags，点击要下载的版本&lt;/p&gt;
+&lt;p&gt;进去后到下面找到适用于 Windows 的扩展版（hugo 有一个很好的地方就是虽然他是 go 语言写的，但是我们不需要安装 go 就可以使用）&lt;/p&gt;
+&lt;p&gt;解压在文件夹中，在文件夹路径处输入 cmd，打开命令行，逐步输入下列命令（这里参考https://gohugo.io/getting-started/quick-start/）
+#创建新的目录结构
+hugo new site blog
+#进入该文件夹
+cd blog
+#初始化一个空的Git存储库
+git init&lt;/p&gt;
+&lt;p&gt;（在创建 blog 目录的时候，其实就会跳出来我们下面应该做什么，你可以跟着提示做，不会的我下面会一步一步完成）&lt;/p&gt;
+&lt;p&gt;3.选择 themes
+进入 hugo 提供 thems 的页面选择的主题 &lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://themes.gohugo.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;他会有 Demo 演示，可以根据自己的爱好选择，这里我选择的是 poison，点击 download 会跳到 github 页面，根据提示下载，我使用的是submodule 为了方便后面的更新
+git submodule add &lt;a class=&#34;link&#34; href=&#34;https://github.com/lukeorth/poison.git&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/lukeorth/poison.git&lt;/a&gt; themes/poison
+这个时候 我们的 主题 会被保存在 themes 里面，如果你想省事的话，你可以把所有的文件拖到 blog 目录下，替换原来的空文件夹
+（没错，我们原来创建的 blog 里面的文件夹都是空的，而且你会发现他和 poison 里面的文件夹一模一样）
+● 这里要注意 config.toml 与 blog 里面的 hugo.toml 文件是一样的，你需要将原来的删去
+● 修改 config.toml 里面的 theme 为你 themes 文件夹里面文件的名字（如果你不是使用 git 命令下载的）
+● 因为我的主题 themes 的 toml 文件没有配置好，我是从官网复制的，选择和我的一样的人注意将paginate 参数改为pagination.pagerSize，否则运行一定会报错
+● 一定一定要注意官方网站是怎么说的，因为有一些需要修改的地方
+这个时候你就可以运行了
+hugo server -D
+打开浏览器，输入 127.0.0.1:1313（网址会告诉你，一般是这个）&lt;/p&gt;
+&lt;p&gt;4.建立 Github 仓库
+注册 github 账户，点击 New，这里需要注意一下
+● 必须要和你的账户名相同，并以 github.io 结尾，例如我的（因为我注册过了，所以显示重复）
+● 选择 public，否则无法作为域名使用
+● 先不要添加 README（加了也没事，不加的话到时候它会提示你怎么添加文件）&lt;/p&gt;
+&lt;p&gt;接下来我们要进行上传，首先修改 config.toml 文件，将 baseURL 改为自己的仓库名&lt;/p&gt;
+&lt;p&gt;(这是刚才存储库提示如何上传文件)&lt;/p&gt;
+&lt;p&gt;#逐步输入
+hugo -D#生成public，我们上传的就是该文件夹下内容
+git init
+git add .
+git commit -m &amp;ldquo;first commit&amp;rdquo;
+第一次输入需要姓名与邮箱&lt;/p&gt;
+&lt;p&gt;git branche -M main
+#每个人的这个不一样，按照格式修改即可
+git remote add origin &lt;a class=&#34;link&#34; href=&#34;https://github.com/nihaozym/nihaozym.github.io.git&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/nihaozym/nihaozym.github.io.git&lt;/a&gt;
+git push -u origin main
+这个时候我们刷新一下就可以在我们的仓库里面看到我们上传的文件了
+此时我们点击 Settings&amp;mdash;&amp;ndash;&amp;gt;Pages，将 branch 改为 main，等一会就可以看到显示我们的网站了
+（如果不可以，就将 Source 改为 Action，选一个静态网站，提示你创建 yaml，直接提交即可）&lt;/p&gt;
+&lt;p&gt;这个时候就可以看到我们的网站了&lt;/p&gt;
+&lt;p&gt;5.生成新的文档
+hugo new nihao.md
+生成了 Markdown 格式的文档，就开始了我们的博客之旅&lt;/p&gt;
 </description>
         </item>
         <item>

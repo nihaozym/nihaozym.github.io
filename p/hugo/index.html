@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="haha nihao\n">
-<title>Newfile</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="1.安装 git windows 安装 git 还是简单的，https://git-scm.com/downloads/win 进入到该网站之后选择适用于自己电脑的版本 当然直接使用 winget 命令是最简单的 winget install &ndash;id Git.Git -e &ndash;source winget 这个时候我们已经安装好了，你可以使用 version 查看版本 git version 2. 安装 hugo 方法一：这里我参考了Windows安装hugo既可以使用 windows 电脑自带的 winget 包管理器安装 Hugo 的扩展版本 winget install Hugo.Hugo.Extended 卸载 Hugo 的扩展版本： #查看版本 hugo version #使用winget进行删除 winget uninstall &ndash;name &ldquo;Hugo (Extended)&rdquo;\n#如果无法卸载,可以找到安装的exe文件，进行删除 where.exe hugo 方法二： 从 github 上面https://github.com/gohugoio/hugo/tags，点击要下载的版本\n进去后到下面找到适用于 Windows 的扩展版（hugo 有一个很好的地方就是虽然他是 go 语言写的，但是我们不需要安装 go 就可以使用）\n解压在文件夹中，在文件夹路径处输入 cmd，打开命令行，逐步输入下列命令（这里参考https://gohugo.io/getting-started/quick-start/） #创建新的目录结构 hugo new site blog #进入该文件夹 cd blog #初始化一个空的Git存储库 git init\n">
+<title>Hugo</title>
 
-<link rel='canonical' href='https://nihaozym.github.io/p/newfile/'>
+<link rel='canonical' href='https://nihaozym.github.io/p/hugo/'>
 
-<link rel="stylesheet" href="/scss/style.min.84927225ac90e1f5508f9a6d2459a723c4f408a316d6340f05798ba6d14a5226.css"><meta property='og:title' content="Newfile">
-<meta property='og:description' content="haha nihao\n">
-<meta property='og:url' content='https://nihaozym.github.io/p/newfile/'>
+<link rel="stylesheet" href="/scss/style.min.84927225ac90e1f5508f9a6d2459a723c4f408a316d6340f05798ba6d14a5226.css"><meta property='og:title' content="Hugo">
+<meta property='og:description' content="1.安装 git windows 安装 git 还是简单的，https://git-scm.com/downloads/win 进入到该网站之后选择适用于自己电脑的版本 当然直接使用 winget 命令是最简单的 winget install &ndash;id Git.Git -e &ndash;source winget 这个时候我们已经安装好了，你可以使用 version 查看版本 git version 2. 安装 hugo 方法一：这里我参考了Windows安装hugo既可以使用 windows 电脑自带的 winget 包管理器安装 Hugo 的扩展版本 winget install Hugo.Hugo.Extended 卸载 Hugo 的扩展版本： #查看版本 hugo version #使用winget进行删除 winget uninstall &ndash;name &ldquo;Hugo (Extended)&rdquo;\n#如果无法卸载,可以找到安装的exe文件，进行删除 where.exe hugo 方法二： 从 github 上面https://github.com/gohugoio/hugo/tags，点击要下载的版本\n进去后到下面找到适用于 Windows 的扩展版（hugo 有一个很好的地方就是虽然他是 go 语言写的，但是我们不需要安装 go 就可以使用）\n解压在文件夹中，在文件夹路径处输入 cmd，打开命令行，逐步输入下列命令（这里参考https://gohugo.io/getting-started/quick-start/） #创建新的目录结构 hugo new site blog #进入该文件夹 cd blog #初始化一个空的Git存储库 git init\n">
+<meta property='og:url' content='https://nihaozym.github.io/p/hugo/'>
 <meta property='og:site_name' content='梦想家的懒虫'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-02-26T23:15:26&#43;08:00'/><meta property='article:modified_time' content='2025-02-26T23:15:26&#43;08:00'/>
-<meta name="twitter:title" content="Newfile">
-<meta name="twitter:description" content="haha nihao\n">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-02-27T11:49:58&#43;08:00'/><meta property='article:modified_time' content='2025-02-27T11:49:58&#43;08:00'/>
+<meta name="twitter:title" content="Hugo">
+<meta name="twitter:description" content="1.安装 git windows 安装 git 还是简单的，https://git-scm.com/downloads/win 进入到该网站之后选择适用于自己电脑的版本 当然直接使用 winget 命令是最简单的 winget install &ndash;id Git.Git -e &ndash;source winget 这个时候我们已经安装好了，你可以使用 version 查看版本 git version 2. 安装 hugo 方法一：这里我参考了Windows安装hugo既可以使用 windows 电脑自带的 winget 包管理器安装 Hugo 的扩展版本 winget install Hugo.Hugo.Extended 卸载 Hugo 的扩展版本： #查看版本 hugo version #使用winget进行删除 winget uninstall &ndash;name &ldquo;Hugo (Extended)&rdquo;\n#如果无法卸载,可以找到安装的exe文件，进行删除 where.exe hugo 方法二： 从 github 上面https://github.com/gohugoio/hugo/tags，点击要下载的版本\n进去后到下面找到适用于 Windows 的扩展版（hugo 有一个很好的地方就是虽然他是 go 语言写的，但是我们不需要安装 go 就可以使用）\n解压在文件夹中，在文件夹路径处输入 cmd，打开命令行，逐步输入下列命令（这里参考https://gohugo.io/getting-started/quick-start/） #创建新的目录结构 hugo new site blog #进入该文件夹 cd blog #初始化一个空的Git存储库 git init\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -250,7 +250,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/newfile/">Newfile</a>
+            <a href="/p/hugo/">Hugo</a>
         </h2>
     
         
@@ -272,7 +272,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2025:02-26</time>
+                <time class="article-time--published">2025:02-27</time>
             </div>
         
 
@@ -288,7 +288,73 @@
     <section class="article-content">
     
     
-    <p>haha nihao</p>
+    <p>1.安装 git
+windows 安装 git 还是简单的，https://git-scm.com/downloads/win  进入到该网站之后选择适用于自己电脑的版本
+当然直接使用 winget 命令是最简单的
+winget install &ndash;id Git.Git -e &ndash;source winget
+这个时候我们已经安装好了，你可以使用 version 查看版本
+git version
+2. 安装 hugo
+方法一：这里我参考了Windows安装hugo既可以使用 windows 电脑自带的 winget 包管理器安装 Hugo 的扩展版本
+winget install Hugo.Hugo.Extended
+卸载 Hugo 的扩展版本：
+#查看版本
+hugo version
+#使用winget进行删除
+winget uninstall &ndash;name &ldquo;Hugo (Extended)&rdquo;</p>
+<p>#如果无法卸载,可以找到安装的exe文件，进行删除
+where.exe hugo
+方法二：
+从 github 上面https://github.com/gohugoio/hugo/tags，点击要下载的版本</p>
+<p>进去后到下面找到适用于 Windows 的扩展版（hugo 有一个很好的地方就是虽然他是 go 语言写的，但是我们不需要安装 go 就可以使用）</p>
+<p>解压在文件夹中，在文件夹路径处输入 cmd，打开命令行，逐步输入下列命令（这里参考https://gohugo.io/getting-started/quick-start/）
+#创建新的目录结构
+hugo new site blog
+#进入该文件夹
+cd blog
+#初始化一个空的Git存储库
+git init</p>
+<p>（在创建 blog 目录的时候，其实就会跳出来我们下面应该做什么，你可以跟着提示做，不会的我下面会一步一步完成）</p>
+<p>3.选择 themes
+进入 hugo 提供 thems 的页面选择的主题 <a class="link" href="https://themes.gohugo.io/"  target="_blank" rel="noopener"
+    >https://themes.gohugo.io/</a></p>
+<p>他会有 Demo 演示，可以根据自己的爱好选择，这里我选择的是 poison，点击 download 会跳到 github 页面，根据提示下载，我使用的是submodule 为了方便后面的更新
+git submodule add <a class="link" href="https://github.com/lukeorth/poison.git"  target="_blank" rel="noopener"
+    >https://github.com/lukeorth/poison.git</a> themes/poison
+这个时候 我们的 主题 会被保存在 themes 里面，如果你想省事的话，你可以把所有的文件拖到 blog 目录下，替换原来的空文件夹
+（没错，我们原来创建的 blog 里面的文件夹都是空的，而且你会发现他和 poison 里面的文件夹一模一样）
+● 这里要注意 config.toml 与 blog 里面的 hugo.toml 文件是一样的，你需要将原来的删去
+● 修改 config.toml 里面的 theme 为你 themes 文件夹里面文件的名字（如果你不是使用 git 命令下载的）
+● 因为我的主题 themes 的 toml 文件没有配置好，我是从官网复制的，选择和我的一样的人注意将paginate 参数改为pagination.pagerSize，否则运行一定会报错
+● 一定一定要注意官方网站是怎么说的，因为有一些需要修改的地方
+这个时候你就可以运行了
+hugo server -D
+打开浏览器，输入 127.0.0.1:1313（网址会告诉你，一般是这个）</p>
+<p>4.建立 Github 仓库
+注册 github 账户，点击 New，这里需要注意一下
+● 必须要和你的账户名相同，并以 github.io 结尾，例如我的（因为我注册过了，所以显示重复）
+● 选择 public，否则无法作为域名使用
+● 先不要添加 README（加了也没事，不加的话到时候它会提示你怎么添加文件）</p>
+<p>接下来我们要进行上传，首先修改 config.toml 文件，将 baseURL 改为自己的仓库名</p>
+<p>(这是刚才存储库提示如何上传文件)</p>
+<p>#逐步输入
+hugo -D#生成public，我们上传的就是该文件夹下内容
+git init
+git add .
+git commit -m &ldquo;first commit&rdquo;
+第一次输入需要姓名与邮箱</p>
+<p>git branche -M main
+#每个人的这个不一样，按照格式修改即可
+git remote add origin <a class="link" href="https://github.com/nihaozym/nihaozym.github.io.git"  target="_blank" rel="noopener"
+    >https://github.com/nihaozym/nihaozym.github.io.git</a>
+git push -u origin main
+这个时候我们刷新一下就可以在我们的仓库里面看到我们上传的文件了
+此时我们点击 Settings&mdash;&ndash;&gt;Pages，将 branch 改为 main，等一会就可以看到显示我们的网站了
+（如果不可以，就将 Source 改为 Action，选一个静态网站，提示你创建 yaml，直接提交即可）</p>
+<p>这个时候就可以看到我们的网站了</p>
+<p>5.生成新的文档
+hugo new nihao.md
+生成了 Markdown 格式的文档，就开始了我们的博客之旅</p>
 
 </section>
 
@@ -363,9 +429,9 @@
     
     <section class="powerby">
         
-            """网站总访客数：<span id='busuanzi_value_site_uv' style='margin-right:50px'>Loading</span> 网站总访问量：<span id='busuanzi_value_site_pv' style='margin-right:50px'>Loading</span>
+            网站总访客数：<span id='busuanzi_value_site_uv' style='margin-right:50px'>Loading</span> 网站总访问量：<span id='busuanzi_value_site_pv' style='margin-right:50px'>Loading</span>
 <a href='https://cloud.umami.is/share/lNbMCGwDbcyYR2P2/nihaozym.github.io' style='color:blue' target='_blank'>网站访问实时统计</a><br/>
-<span id='span_show_age'  style='margin-right:50px'/>"""
+<span id='span_show_age'  style='margin-right:50px'/>
  <br/>
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
